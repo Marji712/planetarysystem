@@ -1,0 +1,36 @@
+{
+	"planets":[
+		{
+			"name": "Earth",
+			"descr":"Population is 42% jerks",
+		},
+		{
+			"name": "Neptune",
+			"descr":"Has supersonic winds",
+		},
+		{
+			"name": "Jupiter",
+			"descr":"A great comet catcher",
+		},
+		{
+			"name": "Mars",
+			"descr":"Used to have a thicker atmosphere",
+		},
+		{
+			"name": "Uranus",
+			"descr":"More stormy than we thought",
+		},
+		{
+			"name": "Saturn",
+			"descr":"No one knows how old Saturn's rings are",
+		},
+		{
+			"name": "Venus",
+			"descr":"Doesn't have any moons, and we don't know why",
+		},
+		{
+			"name": "Mercury",
+			"descr":"Hot, but not too hot for ice",
+		},
+	]
+}

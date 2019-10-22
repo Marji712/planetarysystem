@@ -15,7 +15,14 @@ func main() {
 	name, _ := reader.ReadString('\n')
 	fmt.Println("Nice to meet you,",name, ". My name is Eliza, I'm an old friend of Alexa")
 	fmt.Println("Let's go on an adventure!")
-	reader = bufio.NewReader(os.Stdin)
+	pickchoice()
+	fmt.Println("Traveling to  ...")
+	fmt.Println("Arrived a .  ")
+
+}
+
+func pickchoice() {
+	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Shall I randomly choose a planet for you to vist? (Y or N)")
 	answer, _ := reader.ReadString('\n')
 	if strings.TrimRight(answer, "\n") == "Y" {
@@ -23,9 +30,6 @@ func main() {
 	} else if strings.TrimRight(answer, "\n") == "N" {
 		fmt.Println("Put random picker here")
 	} else {
-		fmt.Println("Throw error and let's go back to the question, idiot")
+		pickchoice()
 	}
-	fmt.Println("Traveling to  ...")
-	fmt.Println("Arrived a .  ")
-
 }
